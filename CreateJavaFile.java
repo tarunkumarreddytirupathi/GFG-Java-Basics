@@ -48,7 +48,6 @@ public class CreateJavaFile {
             System.out.println("An error occurred while writing to the file.");
             e.printStackTrace();
         }
-
         // Close the scanner
         scanner.close();
     }
