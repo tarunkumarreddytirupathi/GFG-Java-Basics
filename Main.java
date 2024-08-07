@@ -11,14 +11,14 @@ public class Main {
         // Create a new array with a size one less than the original array
         int[] newArray = new int[numbers.length - 1];
 
-        // Copy the elements before the indexToRemove
-        System.arraycopy(numbers, 0, newArray, 0, indexToRemove);
-
-        // Copy the elements after the indexToRemove
-        System.arraycopy(numbers, indexToRemove + 1, newArray, indexToRemove, numbers.length - indexToRemove - 1);
+        // Copy elements to the new array, excluding the element to remove
+        for (int i = 0, j = 0; i < numbers.length; i++) {
+            if (i != indexToRemove) {
+                newArray[j++] = numbers[i];
+            }
+        }
 
         // Print the new array
-        System.out.println("New array: " + Arrays.toString(newArray));
+        System.out.println(newArray[0]);
     }
 }
-
