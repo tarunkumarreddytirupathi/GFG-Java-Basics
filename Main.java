@@ -19,6 +19,6 @@ public class Main {
         }
 
         // Print the new array
-        System.out.println(newArray[0]);
+        System.out.println(newArray[1]);
     }
 }
