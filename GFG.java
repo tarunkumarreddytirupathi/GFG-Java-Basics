@@ -59,22 +59,24 @@ class GFG {
 //User function Template for Java
 
 class Solution{
-    public static int CommonElement(int v1[],int v2[],int n1,int n2){
+    public static int[] CommonElement(int v1[],int v2[],int n1,int n2,int array[]){
         if(n2==v2.length-1){
             if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
                 v1[n1]=-1;
                 v2[n2]=-1;
-                return v2[n2],n1,n2;
+                return array;
             }
-           
-            return 0;
+            array[0]=0;
+           array[1]=0;
+           array[2]=0;
+            return array;
         }
         else{
             if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
                 
                 v1[n1]=-1;
                 v2[n2]=-1;
-                return v2[n2],n1,n2;
+                return array;
             }
             ++n2;
             
@@ -86,8 +88,8 @@ class Solution{
     public static ArrayList<Integer> findCommonElements(int v1[],int v2[],int n1,int n2,ArrayList<Integer> list){
         
         if(n1==v1.length-1){
-            int number; int i; int j;
-            number,i,j=CommonElement( v1, v2, n1, n2);
+            int array[]=new int[3];
+            number,i,j=CommonElement( v1, v2, n1, n2,array);
             if (number>0) {
                 list.add(number);
             }
