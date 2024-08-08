@@ -59,37 +59,45 @@ class GFG {
 //User function Template for Java
 
 class Solution{
-    public static ArrayList<Integer> CommonElement(int v1[],int v2[],int n1,int n2,List<Integer> list){
+    public static int CommonElement(int v1[],int v2[],int n1,int n2){
         if(n2==v2.length-1){
             if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
-                list.add(v2[n2]);
                 v1[n1]=-1;
                 v2[n2]=-1;
+                return v2[n2],n1,n2;
             }
            
-            return (ArrayList<Integer>) list;
+            return 0;
         }
         else{
             if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
-                list.add(v2[n2]);
+                
                 v1[n1]=-1;
                 v2[n2]=-1;
+                return v2[n2],n1,n2;
             }
             ++n2;
             
         }
-        return  CommonElement(v1,v2,n1, n2, list);
+        return  CommonElement(v1,v2,n1, n2);
         
     }
     
-    public static ArrayList<Integer> findCommonElements(int v1[],int v2[],int n1,int n2,List<Integer> list){
+    public static ArrayList<Integer> findCommonElements(int v1[],int v2[],int n1,int n2,ArrayList<Integer> list){
         
         if(n1==v1.length-1){
-            list = CommonElement( v1, v2, n1, n2,list);
+            int number; int i; int j;
+            number,i,j=CommonElement( v1, v2, n1, n2);
+            if (number>0) {
+                list.add(number);
+            }
             return (ArrayList<Integer>) list;
         }
         else{
-            CommonElement( v1, v2, n1, n2,list);
+            int number=CommonElement( v1, v2, n1, n2);
+            if (number>0) {
+                list.add(number);
+            }
              ++n1;
         }
         return findCommonElements( v1, v2, n1, n2,list);
