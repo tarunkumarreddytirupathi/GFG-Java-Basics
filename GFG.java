@@ -61,14 +61,15 @@ class GFG {
 class Solution{
     public static ArrayList<Integer> CommonElement(int v1[],int v2[],int n1,int n2,List<Integer> list){
         if(n2==v2.length-1){
-            if(v1[n1]==v2[n2]){
+            if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
                 list.add(v2[n2]);
                 v1[n1]=-1;
                 v2[n2]=-1;
             }
+            return (ArrayList<Integer>) list;
         }
         else{
-            if(v1[n1]==v2[n2]){
+            if(v1[n1]>0&& v1[n1] >0 &&v1[n1]==v2[n2]){
                 list.add(v2[n2]);
                 v1[n1]=-1;
                 v2[n2]=-1;
