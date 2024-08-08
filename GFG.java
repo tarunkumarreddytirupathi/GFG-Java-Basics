@@ -99,7 +99,7 @@ class Solution{
     {
         ArrayList<Integer> list=new ArrayList<>();
         
-        list=findCommonElements(v1,v2,0,-0,list);
+        list=findCommonElements(v1,v2,0,0,list);
         //Sort ascending 
         Collections.sort(list);
         return list;
