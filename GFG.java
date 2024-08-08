@@ -97,7 +97,8 @@ class Solution{
         ArrayList<Integer> list=new ArrayList<>();
         
         list=findCommonElements(v1,v2,-1,-1,list);
-        
+        //Sort ascending 
+        Collections.sort(list);
         return list;
     }
 }
