@@ -10,7 +10,7 @@ class Solution {
             sum += i;
         }
 
-    
+  
         double average = sum / (double) arr.length;
         
         return String.format("%.2f", average);
