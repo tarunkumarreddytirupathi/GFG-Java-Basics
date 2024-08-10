@@ -9,7 +9,7 @@ class Solution {
         for (int i : arr) {
             sum += i;
         }
-        
+
     
         double average = sum / (double) arr.length;
         
