@@ -7,6 +7,7 @@ copy the below code and execute in GFG
 
 
 
+
 import java.io.*;
 import java.math.*;
 import java.security.*;
