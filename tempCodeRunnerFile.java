@@ -1,1 +1,0 @@
-ob.common_element(v1, v2)
