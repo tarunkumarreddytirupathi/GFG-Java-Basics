@@ -6,7 +6,7 @@
 copy the below code and execute in GFG
 
 
-//User function Template for Java
+
 class Solution{
     String isVowel(char c){
         c=Character.toLowerCase(c);
