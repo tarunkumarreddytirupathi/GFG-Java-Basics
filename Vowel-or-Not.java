@@ -9,7 +9,7 @@ class Solution{
         //convert character into lowercase letter 
         c=Character.toLowerCase(c);
 
-        //chech whther given letter is vowel or n
+        //chech whther given letter is vowel or not
         if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u')
         return "YES";
         else
