@@ -4,7 +4,6 @@
 copy the below code and execute in GFG
 
 
-
 class Solution{
     String isVowel(char c){
         c=Character.toLowerCase(c);
