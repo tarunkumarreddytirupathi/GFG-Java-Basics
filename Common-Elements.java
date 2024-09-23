@@ -5,11 +5,9 @@
 
 copy the below code and execute in GFG
 
-
 class Solution{
     public static ArrayList<Integer> common_element(int v1[], int v2[])
     {
-        
         Arrays.sort(v1);
         Arrays.sort(v2);
         
